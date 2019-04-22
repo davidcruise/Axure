@@ -1,0 +1,60 @@
+import sys  
+sys.path.append('/Users/junyuliu/')  
+from selenium import webdriver
+import time
+
+chromedriver = "/Users/junyuliu/Desktop/CSYE7280_FinalEbrary/chromedriver"
+driver = webdriver.Chrome(chromedriver)
+driver.get('https://zvcwk2.axshare.com/#c=2')
+
+driver.find_element_by_xpath('//*[@id="u5_input"]').send_keys('liujunyumail')
+time.sleep(1)
+driver.find_element_by_xpath('//*[@id="u8_input"]').send_keys('123456')
+time.sleep(1)
+driver.find_element_by_xpath('//*[@id="u10_input"]').send_keys('123456')
+time.sleep(1)
+driver.find_element_by_xpath('//*[@id="u15_img"]').click()
+time.sleep(1)
+driver.find_element_by_xpath('//*[@id="u5_input"]').send_keys('@gmail.com')
+time.sleep(1)
+driver.find_element_by_xpath('//*[@id="u8_input"]').send_keys('78')
+time.sleep(1)
+driver.find_element_by_xpath('//*[@id="u10_input"]').clear()
+driver.find_element_by_xpath('//*[@id="u10_input"]').send_keys('12345678')
+time.sleep(1)
+driver.find_element_by_xpath('//*[@id="u15_img"]').click()
+
+driver.find_element_by_xpath('//*[@id="u26_input"]').send_keys('liujunyu')
+time.sleep(1)
+driver.find_element_by_xpath('//*[@id="u29_input"]').send_keys('123456')
+time.sleep(1)
+driver.find_element_by_xpath('//*[@id="u33_img"]').click()
+time.sleep(1)
+driver.find_element_by_xpath('//*[@id="u46_text"]/p/span').click()
+
+driver.find_element_by_xpath('//*[@id="u52_input"]').send_keys('liujunyumail@gmail.com')
+time.sleep(1)
+driver.find_element_by_xpath('//*[@id="u55_input"]').send_keys('123456')
+time.sleep(1)
+driver.find_element_by_xpath('//*[@id="u65_text"]/p/span').click()
+time.sleep(1)
+driver.find_element_by_xpath('//*[@id="u59_img"]').click()
+
+driver.find_element_by_xpath('//*[@id="u72_input"]').send_keys('12345678')
+time.sleep(1)
+driver.find_element_by_xpath('//*[@id="u74_input"]').send_keys('12345678')
+time.sleep(1)
+driver.find_element_by_xpath('//*[@id="u76_img"]').click()
+
+driver.find_element_by_xpath('//*[@id="u26_input"]').send_keys('liujunyumail@gmail.com')
+time.sleep(1)
+driver.find_element_by_xpath('//*[@id="u29_input"]').send_keys('12345678')
+time.sleep(1)
+driver.find_element_by_xpath('//*[@id="u33_img"]').click()
+
+time.sleep(1)
+driver.find_element_by_xpath('//*[@id="u1028_img"]').click()
+time.sleep(1)
+driver.find_element_by_xpath('//*[@id="u90_img"]').click()
+time.sleep(1)
+driver.find_element_by_xpath('//*[@id="u915_img"]').click()
